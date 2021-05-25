@@ -9,6 +9,7 @@ body {
     background-color: $pink;
     font-family: futura_handwritten;
     font-size: 1rem;
+    cursor: url(https://i.imgur.com/e06ykgc.png), progress;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,7 +46,7 @@ h1.display {
 }
 
 a {
-    color: inherit;
+    color:#FFB972;
 
     &.no_underline {
         text-decoration: none;
@@ -54,6 +55,15 @@ a {
     &:active {
         color: #ffffff;
     }
+
+    &:visited {
+        color:#FFB1B1;
+    }
+
+    &:hover {
+        cursor: url(https://i.imgur.com/rMge5Cw.png),progress;
+        color:#FFD7AE;
+   }
 }
 
 .pagination {
@@ -66,7 +76,7 @@ a {
     li {
         float: left;
         margin: 5px 10px 5px 0;
-        
+
         &:last-of-type {
             margin-right: 0;
         }
@@ -81,7 +91,7 @@ a {
             text-align: center;
             box-sizing: border-box;
         }
-        
+
         div {
             display: block;
             padding: .25rem;
@@ -100,7 +110,7 @@ a {
             height: 8rem;
         }
     }
-    
+
     & h2 {
         margin: .5rem 0;
         text-align: center;

@@ -1,0 +1,32 @@
+#archive_list, ul.nested {
+    list-style-type: none;
+}
+
+#archive_list {
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+        content: "\25b6";
+        color: $pink;
+        display: inline-block;
+        margin-right: .4rem;
+    }
+}
+
+.caret_down::before {
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}

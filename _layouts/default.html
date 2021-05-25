@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+
+        <title>{{ page.title }} - {{ site.title }}</title>
+
+        <link rel='stylesheet' type='text/css' href='/assets/css/style.css'>
+    </head>
+    <body>
+        <header class='top'>
+            <h1 class='display'><a href='/' class='no_underline'>{{ site.title }}</a></h1>
+        </header>
+
+        <div class='page_container'>
+            <section class='content'>
+                {{ content }}
+            </section>
+
+            <aside class='sidebar'>
+                <section class='card about_header' style='margin-bottom: 2rem;'>
+                    <h2>about me</h2>
+                    <div class='portrait_container'>
+                        <img src='/assets/portrait.png' alt='Portrait' />
+                    </div>
+                    <p>{{ site.description }}</p>
+                </section>
+
+                {% include archive.html %}
+            </aside>
+        </div>
+    </body>
+</html>

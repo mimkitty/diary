@@ -1,0 +1,38 @@
+<div class='card'>
+    <h3>archive</h3>
+
+    {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+    <ul id='archive_list'>
+        {% for year in posts_by_year %}
+            <li>
+                <span class='caret'>{{ year.name }}</span>
+
+                {% assign posts_by_month = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+                <ul class='nested'>
+                    {% for month in posts_by_month %}
+                        <li>
+                            <span class='caret'>{{ month.name }}</span>
+                            <ul class='nested'>
+                                {% for post in month.items %}
+                                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script type='text/javascript'>
+    var togglers = document.getElementsByClassName('caret');
+
+    for (let toggler of togglers) {
+        toggler.addEventListener('click', function() {
+            this.parentElement.querySelector('.nested').classList.toggle('active');
+            this.classList.toggle('caret_down');
+        });
+    }
+</script>

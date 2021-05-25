@@ -1,0 +1,123 @@
+@import './colors';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $pink;
+    font-family: futura_handwritten;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: crafty_girls;
+}
+
+header.top {
+    background-color: $light_pink;
+    padding: 1.7rem 0;
+}
+
+h1.display {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: $pink;
+    text-align: center;
+}
+
+.page_container {
+    display: grid;
+    min-width: 75%;
+    max-width: 80%;
+    margin: 3rem auto;
+    grid-template-columns: auto 25%;
+    column-gap: 5rem;
+}
+
+.sidebar {
+    color: #ffffff;
+}
+
+.post_content {
+    background-color: $light_pink;
+}
+
+a {
+    color: inherit;
+
+    &.no_underline {
+        text-decoration: none;
+    }
+
+    &:active {
+        color: #ffffff;
+    }
+}
+
+.pagination {
+    margin-bottom: 1rem;
+    display: table;
+    margin: 0 auto;
+    list-style-type: none;
+    color: #ffffff;
+
+    li {
+        float: left;
+        margin: 5px 10px 5px 0;
+        
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        a {
+            display: block;
+            padding: .25rem;
+        }
+
+        a, div {
+            min-width: 41px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        div {
+            display: block;
+            padding: .25rem;
+        }
+    }
+}
+
+.about_header {
+    & .portrait_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        & img {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+    
+    & h2 {
+        margin: .5rem 0;
+        text-align: center;
+    }
+
+    & p {
+        text-align: center;
+    }
+}
+
+.front_page_post {
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    & h1, & h2:not(.title), & h3, & h4, & h5, & h6 {
+        line-height: normal;
+        font-size: 1rem;
+    }
+}

@@ -2,7 +2,7 @@ title: the mimmy diaries
 description: >-
   mimmy lovejoy ♡ she / they, songwriter, musician, lover of kitties & pink !! i love lots & lots of things . . . ♡
 baseurl: ""
-url: ""
+url: https://themimmydiaries.com
 permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-feed

@@ -1,0 +1,73 @@
+@font-face { font-family: futura_handwritten; src: url(/assets/fonts/futura_handwritten_regular.ttf); }
+
+@font-face { font-family: crafty_girls; src: url(/assets/fonts/crafty_girls_regular.ttf); }
+
+* { box-sizing: border-box; }
+
+body { margin: 0; background-color: #ffa5b1; font-family: futura_handwritten; font-size: 1rem; cursor: url(https://i.imgur.com/e06ykgc.png), progress; }
+
+h1, h2, h3, h4, h5, h6 { font-family: crafty_girls; }
+
+header.top { background-color: #fde8ec; padding: 1.7rem 0; }
+
+h1.display { font-size: 3.5rem; line-height: 3.5rem; color: #ffa5b1; text-align: center; }
+
+.page_container { display: grid; min-width: 75%; max-width: 80%; margin: 3rem auto; grid-template-columns: auto 25%; column-gap: 5rem; }
+
+.sidebar { color: #ffffff; }
+
+.post_content { background-color: #fde8ec; }
+
+a { color: #FFB972; }
+
+a.no_underline { text-decoration: none; }
+
+a:active { color: #ffffff; }
+
+a:visited { color: #FFB1B1; }
+
+a:hover { cursor: url(https://i.imgur.com/rMge5Cw.png), progress; color: #FFD7AE; }
+
+.pagination { margin-bottom: 1rem; display: table; margin: 0 auto; list-style-type: none; color: #ffffff; }
+
+.pagination li { float: left; margin: 5px 10px 5px 0; }
+
+.pagination li:last-of-type { margin-right: 0; }
+
+.pagination li a { display: block; padding: .25rem; }
+
+.pagination li a, .pagination li div { min-width: 41px; text-align: center; box-sizing: border-box; }
+
+.pagination li div { display: block; padding: .25rem; }
+
+.about_header .portrait_container { display: flex; justify-content: center; width: 100%; }
+
+.about_header .portrait_container img { width: 8rem; height: 8rem; }
+
+.about_header h2 { margin: .5rem 0; text-align: center; }
+
+.about_header p { text-align: center; }
+
+.front_page_post:not(:last-child) { margin-bottom: 2rem; }
+
+.front_page_post h1, .front_page_post h2:not(.title), .front_page_post h3, .front_page_post h4, .front_page_post h5, .front_page_post h6 { line-height: normal; font-size: 1rem; }
+
+.card { background-color: #fde8ec; color: #ffa5b1; padding: 1rem 2rem; }
+
+.card img { max-width: 100%; }
+
+#archive_list, ul.nested { list-style-type: none; }
+
+#archive_list { margin: 0; padding: 0; }
+
+.caret { cursor: pointer; user-select: none; }
+
+.caret::before { content: "\25b6"; color: #ffa5b1; display: inline-block; margin-right: .4rem; }
+
+.caret_down::before { transform: rotate(90deg); }
+
+.nested { display: none; }
+
+.active { display: block; }
+
+/*# sourceMappingURL=style.css.map */
